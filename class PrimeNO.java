@@ -1,16 +1,10 @@
- import java.util.*;
- public class PrimeNO
+class PrimeNO
 {
 	public static void main(String[] args)
 	{
-	   int n=9;
-       if (n <= 1)
-        {
-        System.out.println(n+ " is Not Prime");
-        } 
-    else {
-        int count=0;
-	   for (int i=2;i<=n;i++)
+	   int n=17;
+       int count=0;
+	   for (int i=1;i<=n;i++)
 	   {
 	   if(n % i==0)
 	   count ++;
@@ -21,10 +15,10 @@
 	   }
 	   else
 	   {
-	       System.out.printl("It is not a prime number");
+	       System.out.println("It is not a prime number");
 	   }
    }
 }
-}
+
 
 
