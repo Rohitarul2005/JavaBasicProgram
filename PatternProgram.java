@@ -13,6 +13,7 @@ class PatternProgram{
         pattern9(n);
         pattern10(n);
         pattern11(n);
+        pattern12(n);
     } 
     static void pattern1(int n)
     {
@@ -133,7 +134,7 @@ static void pattern9(int n){
                 }
             System.out.println();
         }
-    }
+    } //numerical diamond pattern
     static void pattern10(int n){
         for(int i=1;i<=n;i++)
             {
@@ -169,7 +170,7 @@ static void pattern9(int n){
                     }
                 System.out.println();
             }
-        }
+        }//diamond pattern
         static void pattern11(int n){
             for(int i=1;i<=n;i++)
             {
@@ -196,5 +197,15 @@ static void pattern9(int n){
                 }
             System.out.println();
         }
+    }
+    //lower left triangle
+    static void pattern12(int n)
+    {
+        for(int i=n;i>=1;i--)
+        {
+            for(int j=1;j<=i;j++){
+                System.out.print(" * ");
+        }
+            System.out.println();
     }
 }
