@@ -29,8 +29,8 @@ public class IntegerSpliting
 		        primesum1=primesum1+(split*ten2);
 		        ten2=ten2*10;
 		    }
-		}System.out.println("\nOddsum1 " + Oddsum1 +"\nEvensum1 " + Evensum1 +"\nprimesum1 " +primesum1);
-		System.out.println("\nOddRev "+Oddsum+"\nEvenRev "+ Evensum + "\nprimeRev"+primesum);
+		}System.out.println("\nOddsum1: " + Oddsum1 +"\nEvensum1: " + Evensum1 +"\nprimesum1: " +primesum1);
+		System.out.println("\nOddRev: "+Oddsum+"\nEvenRev: "+ Evensum + "\nprimeRev: "+primesum);
 	
 	}
 	static boolean checkprime(int number)
