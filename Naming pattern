@@ -1,0 +1,235 @@
+import java.util.Scanner;
+
+public class StarPatternSwitch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get user input
+        System.out.print("Enter your name in uppercase (A-Z only): ");
+        String name = scanner.nextLine().toUpperCase();
+
+        // Print each character in star pattern
+        for (char ch : name.toCharArray()) {
+            printCharacter(ch);
+            System.out.println(); // Separate letters
+        }
+
+        scanner.close();
+    }
+
+    // Function to print a single character in a star pattern
+    public static void printCharacter(char ch) {
+        switch (ch) {
+            case 'A':
+                System.out.println("  *  ");
+                System.out.println(" * * ");
+                System.out.println("*****");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                break;
+
+            case 'B':
+                System.out.println("**** ");
+                System.out.println("*   *");
+                System.out.println("**** ");
+                System.out.println("*   *");
+                System.out.println("**** ");
+                break;
+
+            case 'C':
+                System.out.println(" ****");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                System.out.println(" ****");
+                break;
+
+            case 'D':
+                System.out.println("**** ");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("**** ");
+                break;
+
+            case 'E':
+                System.out.println("*****");
+                System.out.println("*    ");
+                System.out.println("**** ");
+                System.out.println("*    ");
+                System.out.println("*****");
+                break;
+
+            case 'F':
+                System.out.println("*****");
+                System.out.println("*    ");
+                System.out.println("**** ");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                break;
+
+            case 'G':
+                System.out.println(" ****");
+                System.out.println("*    ");
+                System.out.println("*  **");
+                System.out.println("*   *");
+                System.out.println(" ****");
+                break;
+
+            case 'H':
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*****");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                break;
+
+            case 'I':
+                System.out.println("*****");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                System.out.println("*****");
+                break;
+
+            case 'J':
+                System.out.println("  ***");
+                System.out.println("    *");
+                System.out.println("    *");
+                System.out.println("*   *");
+                System.out.println(" *** ");
+                break;
+
+            case 'K':
+                System.out.println("*   *");
+                System.out.println("*  * ");
+                System.out.println("***  ");
+                System.out.println("*  * ");
+                System.out.println("*   *");
+                break;
+
+            case 'L':
+                System.out.println("*    ");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                System.out.println("*****");
+                break;
+
+            case 'M':
+                System.out.println("*   *");
+                System.out.println("** **");
+                System.out.println("* * *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                break;
+
+            case 'N':
+                System.out.println("*   *");
+                System.out.println("**  *");
+                System.out.println("* * *");
+                System.out.println("*  **");
+                System.out.println("*   *");
+                break;
+
+            case 'O':
+                System.out.println(" *** ");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println(" *** ");
+                break;
+
+            case 'P':
+                System.out.println("**** ");
+                System.out.println("*   *");
+                System.out.println("**** ");
+                System.out.println("*    ");
+                System.out.println("*    ");
+                break;
+
+            case 'Q':
+                System.out.println(" *** ");
+                System.out.println("*   *");
+                System.out.println("* * *");
+                System.out.println("*  **");
+                System.out.println(" *** ");
+                break;
+
+            case 'R':
+                System.out.println("**** ");
+                System.out.println("*   *");
+                System.out.println("**** ");
+                System.out.println("*  * ");
+                System.out.println("*   *");
+                break;
+
+            case 'S':
+                System.out.println(" ****");
+                System.out.println("*    ");
+                System.out.println(" *** ");
+                System.out.println("    *");
+                System.out.println("**** ");
+                break;
+
+            case 'T':
+                System.out.println("*****");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                break;
+
+            case 'U':
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println(" *** ");
+                break;
+
+            case 'V':
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println(" * * ");
+                System.out.println("  *  ");
+                break;
+
+            case 'W':
+                System.out.println("*   *");
+                System.out.println("*   *");
+                System.out.println("* * *");
+                System.out.println("** **");
+                System.out.println("*   *");
+                break;
+
+            case 'X':
+                System.out.println("*   *");
+                System.out.println(" * * ");
+                System.out.println("  *  ");
+                System.out.println(" * * ");
+                System.out.println("*   *");
+                break;
+
+            case 'Y':
+                System.out.println("*   *");
+                System.out.println(" * * ");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                System.out.println("  *  ");
+                break;
+
+            case 'Z':
+                System.out.println("*****");
+                System.out.println("   * ");
+                System.out.println("  *  ");
+                System.out.println(" *   ");
+                System.out.println("*****");
+                break;
+
+            default:
+                System.out.println("Invalid character!");
+        }
+    }
+}
