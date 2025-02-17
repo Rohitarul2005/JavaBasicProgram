@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class StarPatternSwitch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Get user input
         System.out.print("Enter your name in uppercase (A-Z only): ");
         String name = scanner.nextLine().toUpperCase();
 
