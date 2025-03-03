@@ -1,39 +1,54 @@
-import java.util.*;
-class Shape
-{
-  protected double area;
-  public void calculate_area(){
-      System.out.println("area of shapes");
-  }
+class Shape {
+	void area() {
+		System.out.println("Area of Shape");
+	}
+}
+class Rectangle extends Shape {
+	double area;
+	Rectangle(double l,double b) {
+		this.area=l*b;
+	}
+	void area() {
+        super.area();
+		System.out.println("Area of Rectangle: "+area);
+	}
+}
+class Triangle extends Shape{
+    double area;
+    Triangle(double h,double b){
+        area=0.5*(b*h);
+    }
+    void area(){
+        System.out.println("Area of Triangle: "+area);
+    }
 }
 class Square extends Shape{
-    private int a;
-    public void calculate_area(){
-        Scanner in=new Scanner(System.in);
-        System.out.println("Enter value: ");
-        a=in.nextInt();
+    double area;
+    Square(double a){
         area=a*a;
-        System.out.println(area+" is a area of Square");
+    }
+    void area(){
+        System.out.println("Area of Square: "+area);
     }
 }
 class Circle extends Shape{
-    private double r;
-    public void calculate_area(){
-        Scanner in=new Scanner(System.in);
-        System.out.println("Enter value: ");
-        r=in.nextInt();
+    double area;
+    Circle(double r){
         area=3.14*r*r;
-        System.out.println(area+" is a area of Circle");
+    }
+    void area(){
+        System.out.println("Area of Circle: "+area);
     }
 }
 class Main{
-    public static void main(String args[]){
-        Shape s = new Shape();
-        s.calculate_area();
-        Shape a1 = new Circle();
-        a1.calculate_area();
-        Shape a2 = new Square();
-        a2.calculate_area();
-        
-    }
+	public static void main(String args[]) {
+		Rectangle obj1=new Rectangle(14.94,15);
+		Triangle obj2=new Triangle(10,15);
+		Square obj3=new Square(10);
+		Circle obj4=new Circle(4);
+		obj1.area();
+		obj2.area();
+		obj3.area();
+		obj4.area();
+	}
 }
